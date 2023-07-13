@@ -1,0 +1,6 @@
+#install module qrcode
+import qrcode
+#Generate qrcode
+myqr=qrcode.make("coimbatore is manchester og india")
+#save the qrcode
+myqr.save("myqr.png")
