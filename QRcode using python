@@ -1,0 +1,11 @@
+#install module pyqrcode imort qr code from pyqrcode
+import pyqrcode
+import png
+from pyqrcode import QRCode
+#string which represents the QR code
+s="coimbatore is manchester of india"
+#Generate QR code
+url = pyqrcode.create(s)
+#create and save the svg and png file
+url.svg("myqr.svg", scale = 8)
+url.png("myqr.png", scale = 6)
